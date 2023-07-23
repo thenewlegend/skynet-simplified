@@ -1,0 +1,87 @@
+body {
+    color: #FFFFFF; /* White text color for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF; /* White text color for contrast */
+    background-color: #060606;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+div *{
+    margin: 5px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    font-family: 'Codystar', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #B31822;
+    gap: 10px;
+}
+
+.banner>*{
+    margin: 0;
+}
+
+.main-container,.container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    height: 100px; /* Adjust the height to your preference */
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none; /* Disable the resizing handle */
+    /* Add any other custom styles as needed */
+}
+
+textarea {
+    font-size: 15px;
+    width: 40ch; /* Adjust the width in pixels or other units */
+    height: 20ch; /* Adjust the height in pixels or other units */
+    background-color:hsla(0, 0%, 95%,0.95);
+    border-radius: 8px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    /* Add other styles as needed */
+    }
+
+    #copy-text:hover{
+        cursor: pointer;
+    }
+
+    select:hover{
+        cursor: pointer;
+    }
+
+  @media screen and (max-width: 699px) {
+    .banner{
+        font-size: 21px;
+    }
+
+    .banner>img{
+        width: 80px;
+        height: 80px;
+    }
+
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skynet Simplified</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="app.js" defer></script>
+
+    <link rel="icon" href="images\skynet-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Simplified config and image commands for Skynet bot, making managing settings and visuals effortless.">
+    <meta name="author" content="thenewlegend">
+    <meta property="og:title" content="Skynet Simplified">
+    <meta property="og:description" content="Simplified config and image commands for Skynet bot, making managing settings and visuals effortless.">
+    <meta property="og:image" content="images\skynet-logo.png">
+
+</head>
+
+
+<body>
+</div>
+
+    <div class="main-container" style=" width: 98%;">
+
+        <noscript><p style="display: flex; align-items: center; margin-bottom: 8px;">Enable JavaScript</p></noscript>
+
+        <div class="banner">
+            <span class="logo">    Skynet</span><img src="images\skynet-logo.png" alt="Skynet" width="100" height="100"><span class="logo">Simplified</span>
+        </div>
+
+        <label for="dropdown" style="display: block;">Choose Mode </label>
+        <select id="dropdown" name="options">
+            <option value="option1" selected>Create PROMPT</option>
+            <option value="option2" disabled>Create CONFIG ⚒️</option> <!-- Temporarily disabled -->
+            
+        </select>
+
+        <div class="container left">
+
+            <div class="top-l">
+
+                <div class="type">
+                    <label for="type" >Select the type </label>
+                    <select id="type" name="Command Type">
+                      <option value="/txt2img" selected>/txt2img</option>
+                      <option value="/img2img">/img2img</option>
+                    </select>  
+                </div>
+
+            </div>
+
+            <div class="bottom-l">
+                <p id="charCountMessage">Characters remaining: 256/256</p>
+                <textarea id="outputTextarea" name="outputTextarea" rows="4" cols="50" placeholder="Enter text without commands" maxlength="256"></textarea>
+
+                <div class="buttons" style="display: flex;">
+                    <button type="button" id="clear-text">Clear Text <i class="fas fa-trash-alt"></i></li></button>
+                    <button type="button" id="copy-text">Copy Prompt <i class="far fa-copy"></i></button>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="container right" style="display: none;">
+
+            <div class="top-r">
+
+            </div>
+
+            <div class="mid-r">
+
+            </div>
+
+            <div class="bottom-r">
+
+            </div>
+
+        </div>
+
+        <span class="footer">
+            <span><a href="https://t.me/skynetgpu" style="color: #B31822;text-decoration: none;"> t.me/skynetgpu</a></span>
+        </div>
+
+    </div>
+
+    
+</body>
